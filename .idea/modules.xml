@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KotlinModul.iml" filepath="$PROJECT_DIR$/KotlinModul.iml" />
+      <module fileurl="file://C:\workspace\KotlinModul\KotlinModul.iml" filepath="C:\workspace\KotlinModul\KotlinModul.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\workspace\KotlinModul\app\app.iml" filepath="C:\workspace\KotlinModul\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://C:\workspace\KotlinModul\library\library.iml" filepath="C:\workspace\KotlinModul\library\library.iml" />
       <module fileurl="file://$PROJECT_DIR$/modul_main/modul_main.iml" filepath="$PROJECT_DIR$/modul_main/modul_main.iml" />
+      <module fileurl="file://C:\workspace\KotlinModul\modul_main\modul_main.iml" filepath="C:\workspace\KotlinModul\modul_main\modul_main.iml" />
     </modules>
   </component>
 </project>

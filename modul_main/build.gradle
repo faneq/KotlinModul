@@ -52,4 +52,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     kapt "com.alibaba:arouter-compiler:$rootProject.annotationProcessor"
     implementation project(':library')
+    kapt 'com.google.dagger:dagger-compiler:2.10'
 }

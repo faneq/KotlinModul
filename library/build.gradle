@@ -36,6 +36,9 @@ dependencies {
     //router
     compile 'com.alibaba:arouter-api:1.2.4'
     kapt 'com.alibaba:arouter-compiler:1.1.4'
+    //dagger2
+    compile 'com.google.dagger:dagger:2.10'
+    kapt 'com.google.dagger:dagger-compiler:2.10'
 }
 repositories {
     mavenCentral()

@@ -36,4 +36,5 @@ dependencies {
         implementation project(':modul_main')
         implementation project(':library')
     }
+    kapt 'com.google.dagger:dagger-compiler:2.10'
 }
