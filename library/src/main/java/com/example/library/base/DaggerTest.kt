@@ -7,4 +7,7 @@ class DaggerTest {
     fun show() {
         println("展示数据")
     }
+    fun showName(){
+        println("DaggerTest")
+    }
 }
