@@ -5,7 +5,7 @@ package com.example.library.base
  */
 class DaggerTest {
     fun show() {
-        println("展示数据")
+        println("---------------------展示数据")
     }
     fun showName(){
         println("DaggerTest")

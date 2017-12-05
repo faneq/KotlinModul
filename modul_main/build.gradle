@@ -47,9 +47,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     kapt "com.alibaba:arouter-compiler:$rootProject.annotationProcessor"
     implementation project(':library')
+    compile 'com.google.dagger:dagger:2.10'
     kapt 'com.google.dagger:dagger-compiler:2.10'
 }
 kapt {
+    //有些注入框架需要你打开Kapt(Dagger)，，，如果不打开将无法编译，但是这样会拖慢你的bulid速度，所以其默认是false
+    generateStubs = true
     arguments {
         arg("moduleName", project.getName())
     }
