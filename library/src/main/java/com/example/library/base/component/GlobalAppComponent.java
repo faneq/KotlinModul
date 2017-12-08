@@ -2,6 +2,8 @@ package com.example.library.base.component;
 
 import android.content.Context;
 
+import com.example.library.base.module.RetrofitModule;
+
 public class GlobalAppComponent {
     private volatile static BaseComponent mAppComponent;
 
@@ -15,7 +17,7 @@ public class GlobalAppComponent {
             synchronized (GlobalAppComponent.class) {
                 if (mAppComponent == null) {
                     mAppComponent = DaggerBaseComponent.builder()
-                            .baseModule(new BaseModule())
+                            .baseModule(new BaseModule(context)).retrofitModule(new RetrofitModule(context))
                             .build();
                 }
             }

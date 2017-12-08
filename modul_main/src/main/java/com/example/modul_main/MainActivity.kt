@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         findViewById<Button>(R.id.show).setOnClickListener(View.OnClickListener {
+            
         })
     }
 }

@@ -5,7 +5,6 @@ import android.content.Context
 import com.alibaba.android.arouter.launcher.ARouter
 import com.example.library.base.component.BaseComponent
 import com.example.library.base.component.GlobalAppComponent
-import javax.inject.Inject
 
 /**
  * Created by fanenqian on 2017/11/22.
@@ -13,8 +12,6 @@ import javax.inject.Inject
 open class BaseApplication : Application() {
     private var isDebug: Boolean = true
     private lateinit var context: Context
-    @Inject
-    lateinit var daggerTest: DaggerTest
 
     override fun onCreate() {
         super.onCreate()
@@ -27,7 +24,6 @@ open class BaseApplication : Application() {
         ARouter.init(this) // 尽可能早，推荐在Application中初始化GlobalAppComponent
         initBaseComponent()
         getAppComponent().inject(this)
-        daggerTest.show()
     }
 
     private fun initBaseComponent() {

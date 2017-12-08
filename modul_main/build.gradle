@@ -35,6 +35,11 @@ android {
         }
     }
     compileOptions.incremental = false
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
 }
 
 dependencies {
@@ -47,7 +52,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     kapt "com.alibaba:arouter-compiler:$rootProject.annotationProcessor"
     implementation project(':library')
-    compile 'com.google.dagger:dagger:2.10'
     kapt 'com.google.dagger:dagger-compiler:2.10'
 }
 kapt {
